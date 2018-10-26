@@ -5,11 +5,13 @@ import javax.validation.constraints.Pattern;
 
 public class SumRequest2 {
 
+    private final static String pattern = "^[0-9]{1,3}$";
+
     @NotNull
-    @Pattern(regexp="^[0-9]{0,3}$")
+    @Pattern(regexp=pattern)
     private String string1;
     @NotNull
-    @Pattern(regexp="^[0-9]{0,3}$")
+    @Pattern(regexp=pattern)
     private String string2;
 
     public SumRequest2() {
